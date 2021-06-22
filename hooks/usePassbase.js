@@ -6,7 +6,7 @@ export function usePassbase(props) {
 
   const ref = useRef();
 
-  const invokePassabe = () => {
+  const invokePassbase = () => {
     ref.current.children[0].click();
   };
 
@@ -31,7 +31,7 @@ export function usePassbase(props) {
     });
   }, [prefilled]);
 
-  return { ref, invokePassabe };
+  return { ref, invokePassbase };
 }
 
 usePassbase.PropTypes = {
